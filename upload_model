@@ -1,2 +1,0 @@
-cp mobilenet_quant_v1_224.tflite camera/data/mobilenet_quant_v1_224.tflite 
-cp tmp/output_labels.txt camera/data/labels.txt
