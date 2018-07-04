@@ -1,5 +1,7 @@
 # Objects-Recognition
 
+At this tutorial we will shoot short video for few objects, and teach model MobileNet 1.0 (using transfering learning) to recognise objects from the videos. And upload this model to the IOS mobile app.
+
 cp tmp/output_labels.txt camera/data/labels.txt
 
 toco \
