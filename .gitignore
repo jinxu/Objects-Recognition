@@ -1,6 +1,5 @@
 tmp/
 camera/data/*
-.DS_Store
 *.mov
 *.MOV
 *.jpg
