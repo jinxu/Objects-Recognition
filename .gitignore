@@ -3,3 +3,4 @@ camera/data/*
 *.mov
 *.MOV
 *.jpg
+.DS_Store
