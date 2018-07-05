@@ -32,7 +32,7 @@
 
 // If you have your own model, modify this to the file name, and make sure
 // you've added the file to your app resources too.
-static NSString* model_file_name = @"mobilenet_quant_v1_224";
+static NSString* model_file_name = @"mobilenet_v1_224";
 static NSString* model_file_type = @"tflite";
 
 // If you have your own model, point this to the labels file.
