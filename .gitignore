@@ -1,8 +1,9 @@
 tmp/
-dataset/objects/
-dataset/videoes/
-dataset/test/
-camera/data/
+dataset/objects/*
+dataset/videoes/*
+dataset/test/*
+camera/data/*
+.DS_Store
 *.mov
 *.MOV
 *.jpg
