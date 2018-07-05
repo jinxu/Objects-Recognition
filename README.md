@@ -32,7 +32,8 @@ toco \
 
 TOCO will convert model and put it inside Camera app IOS model folder.
 
-6.1 Copy label file inside app. <code> cp tmp/output_labels.txt camera/data/labels.txt </code>
+6.1 Copy label file inside app. ``` cp tmp/output_labels.txt camera/data/labels.txt ```
+
 7. Open camera app via XCode, compile it to device, it will not work on simulator.
 (App i get from here https://www.tensorflow.org/mobile/tflite/demo_ios but I little but fix it)
 
