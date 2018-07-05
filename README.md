@@ -9,14 +9,19 @@ At this tutorial we will shoot short videos for few objects, and teach model Mob
 - opencv
 - XCode 9.4 (i didn't check on elder version)
 - Tensorflow 1.7 (TOCO will not work with 1.8 so be sure that you install Tensorflow 1.70
+## Files
+- camera - ios app for object recognition
+- decompose_videos.py - decompose videos from folder dataset/videoes/* to the frame, and put frame in dataset/objects
+- retrain.py - retrain MobileNet model using decomposed picture from  dataset/objects
+- label_folders.py get - file from dataset/test/ and predict which object located there.
 
 # Usage
 1. Shoot video for each objects that do you want to use. Video's filename is a label.
 [video example](https://youtu.be/LMbLLQGp9tc)
 2. Run <code> python decompose_videos.py </code> to decompose video to the frame. We get result at dataset/objects/. Each folder will be renamed as label and inside folder we get easch video frame as a picture.
 3. <code> python retrain.py </code>  Train model MobileNet (get from TF dist, but I little bit fix it)
-4. (Optional) Also possible to test model, place few files in dataset/test/ and run <code>label_folders.py</code> We will get 2 top prediction for each file.
-5. After training is done neet to convert model into TFLITE format.
+4. (Optional) Also possible to test model, place few files in dataset/test/ and run <code>python label_folders.py</code> We will get 2 top prediction for each file.
+5. After training is done neet to convert model into TFLITE format. TOCO will convert model and put it inside Camera app IOS model folder.
 ```
 toco \ 
   --input_file=tmp/output_graph.pb \
@@ -29,10 +34,8 @@ toco \
   --inference_type=FLOAT \
   --input_data_type=FLOAT
 ```
-
-TOCO will convert model and put it inside Camera app IOS model folder.
-
-6.1 Copy label file inside app. ``` cp tmp/output_labels.txt camera/data/labels.txt ```
+6.1 Copy label file inside app.
+  ``` cp tmp/output_labels.txt camera/data/labels.txt ```
 
 7. Open camera app via XCode, compile it to device, it will not work on simulator.
 (App i get from here https://www.tensorflow.org/mobile/tflite/demo_ios but I little but fix it)
