@@ -2,6 +2,8 @@
 
 At this tutorial we will shoot short videos for few objects, and teach model MobileNet 1.0 (using transfering learning) to recognise objects from the videos. And use this model inside the IOS mobile app. 
 
+[linkname](https://youtu.be/na2CQGZndNc)
+
 # Dependencies:
 - Python 3.6
 - opencv
@@ -10,6 +12,7 @@ At this tutorial we will shoot short videos for few objects, and teach model Mob
 
 # Usage
 1. Shoot video for each objects that do you want to use. Video's filename is a label.
+[linkname](https://youtu.be/LMbLLQGp9tc)
 2. Run <code> python decompose_videos.py </code> to decompose video to the frame. We get result at dataset/objects/. Each folder will be renamed as label and inside folder we get easch video frame as a picture.
 3. <code> python retrain.py </code>  Train model MobileNet
 4. After training is done neet to convert model into TFLITE format.
