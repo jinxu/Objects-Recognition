@@ -11,9 +11,9 @@ At this tutorial we will shoot short videos for few objects, and teach model Mob
 - Tensorflow 1.7 (TOCO will not work with 1.8 so be sure that you install Tensorflow 1.70
 ## Files
 - camera - ios app for object recognition
-- decompose_videos.py - decompose videos from folder dataset/videoes/* to the frame, and put frame in dataset/objects
-- retrain.py - retrain MobileNet model using decomposed picture from  dataset/objects
-- label_folders.py get - file from dataset/test/ and predict which object located there.
+- decompose_videos.py - decompose videos from folder dataset/videoes/ to the frame, and put frame in dataset/objects/
+- retrain.py - retrain MobileNet model using decomposed picture from  dataset/objects/
+- label_folders.py - get file from dataset/test/ and predict which object located there.
 
 # Usage
 1. Shoot video for each objects that do you want to use. Video's filename is a label.
